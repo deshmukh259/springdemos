@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class SpringDemo {
 
-  /*  @Autowired
+    @Autowired
     private EmpService empService;
-*/
+
     public void demo1() {
 
-      //  System.out.println("emp " + empService);
+        System.out.println("emp " + empService);
     }
 }

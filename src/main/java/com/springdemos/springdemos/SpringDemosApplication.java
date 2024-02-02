@@ -8,6 +8,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -15,6 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan
+@EnableHystrix
 public class SpringDemosApplication implements ApplicationRunner {
 
     @Autowired
@@ -32,7 +34,7 @@ public class SpringDemosApplication implements ApplicationRunner {
         springDemo.demo1();
 
 
-        System.exit(0);
+       // System.exit(0);
     }
 
     @Bean
